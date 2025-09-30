@@ -2,237 +2,228 @@
 
 Informações básicas do projeto.
 
-* **Projeto:** [NOME DO PROJETO]
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
-* **Membros da equipe:**
+## Projeto: 911 - Sistema de Apoio aos Serviços Emergenciais
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+Repositório GitHub: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-2401100-servemergencia
 
-A documentação do projeto é estruturada da seguinte forma:
+Membros da equipe:
 
-1. Introdução
-2. Contexto
-3. Product Discovery
-4. Product Design
-5. Metodologia
-6. Solução
-7. Referências Bibliográficas
+•  Pedro Henrique Amaral Morais
 
-✅ [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
+•  Moises Carvalho Alves Teixeira
 
-# Contexto
+•  Samuel Henrique Alvarenga e Lopes
 
-Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
+•  Gabriel Eduardo de Oliveira Martins
 
-## Problema
+•  Gabriel Rangel de Toledo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+•  Gustavo Fitipaldi Moreira
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
->
-> **Orientações**:
->
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+## A documentação do projeto é estruturada da seguinte forma:
 
-## Objetivos
+### •  Introdução
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+### •  Contexto
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+### •  Product Discovery
 
-## Justificativa
+### •  Product Design
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+### •  Metodologia
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+### •  Solução
 
-## Público-Alvo
+### •  Referências Bibliográficas
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva o mercado para o qual a solução está sendo desenvolvida, detalhando um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc. Adicione informações sobre o público-alvo por meio de uma descrição textual ou por meio do mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+✅ Documentação de Design Thinking (MIRO) https://miro.com/app/board/uXjVJSvRFqM=/
+
+## Contexto 
+***
+ Os serviços emergenciais têm a função de oferecer ajuda rápida em situações críticas, 
+quando a vida das pessoas, seus bens ou até o meio ambiente estão em risco. Eles 
+são indispensáveis porque garantem atendimento imediato em casos como 
+acidentes, doenças graves, incêndios, crimes ou desastres, impedindo que os 
+problemas se tornem ainda maiores. Além de salvar vidas, também ajudam a diminuir 
+prejuízos e trazem à população a tranquilidade de saber que existe apoio disponível 
+em momentos de urgência. Assim, sua importância vai além do socorro imediato, pois 
+representam cuidado, proteção e segurança para toda a sociedade.
+
+## Problema 
+***
+ A ausência de serviços emergenciais traz sérios problemas para a sociedade, já que 
+o atraso no atendimento em situações críticas, como acidentes, crises de saúde, 
+incêndios ou episódios de violência, coloca muitas vidas em risco. Sem esse suporte 
+imediato, aumentam as chances de mortes evitáveis e de sequelas físicas e 
+emocionais. Além disso, os prejuízos materiais e ambientais tendem a ser maiores, 
+pois o controle de incêndios, enchentes e outros desastres se torna mais difícil. Em 
+resumo, a falta desses serviços afeta diretamente a segurança, a saúde e a qualidade 
+de vida da população.
+
+
+## Objetivos 
+***
+ O objetivo do nosso trabalho é encontrar formas de reduzir os problemas causados 
+pela falta de acesso aos serviços emergenciais. A ideia é pensar em alternativas que 
+tornem o atendimento mais rápido e eficiente em casos de urgência, ajudando a salvar 
+vidas, evitar maiores prejuízos e trazer mais segurança para a população.
+
+## Justificativa 
+***
+ A escolha desse tema foi feita porque percebemos a importância que os serviços 
+emergenciais têm no dia a dia da sociedade. Como acidentes, problemas de saúde 
+graves, incêndios ou situações de violência, a rapidez no atendimento pode significar 
+a diferença entre salvar uma vida ou não. No entanto, muitas vezes o acesso a esse 
+tipo de serviço é limitado ou demorado, o que aumenta os riscos e os prejuízos para 
+a população. Por isso, decidimos trabalhar nessa questão, buscando alternativas que 
+possam tornar o atendimento mais ágil e eficiente, contribuindo para mais segurança 
+e qualidade  de vida
+
+## Público-Alvo 
+***
+ O público-alvo deste trabalho são cidadãos que necessitam de serviços emergenciais 
+em situações de risco, como acidentes, problemas de saúde graves, incêndios ou 
+episódios de violência. Além disso, também se estende a órgãos públicos e 
+instituições responsáveis pelo atendimento emergencial, como bombeiros, polícia, 
+equipes médicas e defesa civil, que podem se beneficiar de ferramentas que agilizem 
+a comunicação e a tomada de decisão 
 
 # Product Discovery
-
+***
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
+### • Matriz CSD
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+![Matriz CSD](images/matrizdealinhamento.jpg)
+
+### • Mapa de Stakeholders
+
+![Mapa de Stakeholders](images/mapa.jpg)
+
+### • Entrevistas qualitativas e Highlights
+
+![Entrevista 1](images/entrevista1.png)
+
+![Entrevista 2](images/entrevista2.png)
+
+![Entrevista 3](images/entrevista3.jpg)
+
+![Entrevista 4](images/entrevista4.jpg)
+
+![Entrevista 5](images/entrevista5.jpg)
+
+![Entrevista 6](images/entrevista6.jpg)
+
+
 
 ## Etapa de Definição
 
-### Personas
+### • Personas e Propostas de valor
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+![Persona 1](images/persona1.jpg)
 
-![Exemplo de proposta de valor](images/exemplo-persona.png)
+![Persona 2](images/persona2.jpg)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+![Persona 3](images/persona3.jpg)
+
+![Persona 4](images/persona4.jpg)
+
+![Persona 5](images/persona5.jpg)
+
+![Persona 6](images/persona6.jpg)
+
 
 # Product Design
+***
+ Nesse momento, vamos transformar os insights e validações obtidos em soluções 
+tangíveis e utilizáveis. Essa fase envolve a definição de uma proposta de valor, 
+detalhando a prioridade de cada ideia e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que detalham a interface e a experiência do usuário.
 
-Nesse momento, vamos transformar os insights e validações obtidos em soluções tangíveis e utilizáveis. Essa fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que detalham a interface e a experiência do usuário.
-
-## Histórias de Usuários
-
+## Histórias de Usuários:
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
+![Historia de Usuário](images/historiadeusuario.png)
 
-| EU COMO...`PERSONA` | QUERO/PRECISO ...`FUNCIONALIDADE`        | PARA ...`MOTIVO/VALOR`               |
-| --------------------- | ------------------------------------------ | -------------------------------------- |
-| Usuário do sistema   | Registrar minhas tarefas ⚠️ EXEMPLO ⚠️ | Não esquecer de fazê-las             |
-| Administrador         | Alterar permissões ⚠️ EXEMPLO ⚠️      | Permitir que possam administrar contas |
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão das necessidades de cada persona. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
->
-> **Orientações**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+## Requisitos 
+***
+As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que 
+detalham o escopo do projeto.
 
-## Proposta de Valor
+![Requisitos funcionais](images/requisitosfuncionais.png)
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
-##### Proposta de valor para Persona XPTO ⚠️ EXEMPLO ⚠️
-
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
-
-## Requisitos
-
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
-### Requisitos Funcionais
-
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
 
 ### Requisitos não Funcionais
+***
+![Requisitos Não funcionais funcionais](images/requisitosnaofuncionais.png)
 
-| ID      | Descrição do Requisito                                                              | Prioridade |
-| ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s ⚠️ EXEMPLO ⚠️          | BAIXA      |
+### Projeto de Interface 
+***
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Os requisitos de um projeto são classificados em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Orientações**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+## Protótipo de Logo:
+![Prototipo de Logo](images/logo.png)
 
-## Projeto de Interface
+Protótipos de Tela
 
-Artefatos relacionados com a interface e a interacão do usuário na proposta de solução.
+# HOME-PAGE 
+***
+## Tela inicial do sistema
 
-### Wireframes
+![Tela inicial](images/telainicial.png)
 
-Estes são os protótipos de telas do sistema.
+## TELA DE LOGIN
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
+## Tela para login e/ou cadastro de usuário.
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+![Tela de Login](images/teladelogin.png)
 
-Descrição para a tela XPTO
+## TELA DE CADASTRO: Seleção
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
+Como será apresentado seu cadastro e oção para cadastrar contatos de emêrgencias 
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
->
-> **Orientações**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+![Tela de Cadastro](images/teladecadastro1.png)
 
-### User Flow
+## TELA INICIAL 
+Tela inicial do sistema, mostra ao usuário informações principais:
 
-**✳️✳️✳️ COLOQUE AQUI O DIAGRAMA DE FLUXO DE TELAS ✳️✳️✳️**
+• Serviços Emergênciais disponiveis
 
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
+• Instruções Básicas
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
->
-> **Orientações**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+• Perguntas Frequentes  
 
-### Protótipo Interativo
+![Tela inicial](images/telainicial.png)
 
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
+## TELA DE CONSULTA: 
+A partir da escolha de qualquer serviço disponível o usuario e direcionado para as possíveis seguintes telas.
 
-✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
+• SAMU
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto de interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse lidando com o software pronto. Utilize as mesmas ferramentas de construção de wireframes para montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
+![Tela Samu](images/telasamu.png)
+
+• POLÍCIA MILITAR
+
+![Tela Policia Militar](images/telapolicia.png)
+
+• BOMBEIROS
+
+![Tela Bombeiro](images/telabombeiro.png)
+
+• DEFESA CIVIL
+
+![Tela Defesa Civil](images/defesacivil.png)
+
+
+# USERFLOW 
+
+Ao entrar no site o usuário é direcionado a tela inicial e tem a opção ou não de continuar navegando de com ou sem o login realizado. 
+A diferença é que sem a realização do login o usuário terá acesso limitado a alguns canais nosso site, restringido a apenas informações básicas.
+![Tela Userflow](images/userflow.png)
+
+Protótipo Interativo
+***
+
+https://www.figma.com/design/c6SUAjKDS64F9qXDZXcR0t/911?node-id=123&t=MW8Cz2YgUP0rPvgo-0 
 
 # Metodologia
 
@@ -240,39 +231,30 @@ Detalhes sobre a organização do grupo e o ferramental empregado.
 
 ## Ferramentas
 
+![Ferramentas1](images/ferramentas1.png)
+![Ferramentas2](images/ferramentas2.png)
+
 Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
-| Processo de Design Thinking | Miro       | https://miro.com/XXXXXXX ⚠️ EXEMPLO ⚠️        |
-| Repositório de código     | GitHub     | https://github.com/XXXXXXX ⚠️ EXEMPLO ⚠️      |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
+| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVJSvRFqM=/      |
+| Repositório de código     | GitHub     |https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-2401100-servemergencia.git      |
+| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX  |
+| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/XXXXXXX    |
 |                             |            |                                                    |
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, (2) )ferramentas de comunicação, (3) )ferramentas de diagramação, (4) )plataformas de hospedagem, entre outras.
 
 ## Gerenciamento do Projeto
-
-Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
+***
+Adotamos uma versão adaptada da metodologia scrum, utilizando o GitHub Projects 
+para coordenar e registrar o avanço da equipe. Durante o início do processo 
+realizamos um extenso Design Thinking com diversas etapas como mapeamento de 
+escopo, entrevistas qualitativas, criação de personas, histórias de usuário, brainstorm 
+de ideias, delimitação de funcionalidades e levantamento de requisitos. 
 
 ![Exemplo de Kanban](images/exemplo-kanban.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
->
-> **Orientações**:
->
-> - [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-> - [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-> - [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 # Solução Implementada
 
