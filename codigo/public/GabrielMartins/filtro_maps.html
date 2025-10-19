@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Filtro do Mapa">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gabriel Martins">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <span class="logo-icon">▲</span>
+            <span class="logo-text">Emergencia</span>
+        </div>
+        <nav class="main-nav">
+            <a href="#sobre">Sobre</a>
+            <a href="#localizacao" class="active-nav">Localização</a>
+            <a href="#contatos">Contatos</a>
+            <a href="#editar-perfil" class="profile-link">
+                <span class="profile-icon">👤</span> Editar perfil
+            </a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+
+        <div class="tabs-container">
+
+            <button id="dropdown-toggle" class="tab-button active">
+                Serviços de Emergência <span class="tab-icon">▼</span>
+            </button>
+
+            <div id="dropdown-menu" class="dropdown-content">
+                <a href="#" class="dropdown-option" data-type="hospital" id="filter-hospitais">Hospitais</a>
+                <a href="#" class="dropdown-option" data-type="police" id="filter-policia">Polícia</a>
+                <a href="#" class="dropdown-option" data-type="fire_station" id="filter-bombeiros">Bombeiros</a>
+                <hr class="dropdown-separator">
+                <a href="#" class="dropdown-option active" data-type="all" id="filter-todos">Serviços de Emergências</a>
+            </div>
+
+            <button id="dropdown-toggle-distance" class="tab-button">
+                Distância: 3 km <span class="tab-icon">▼</span>
+            </button>
+
+            <div id="dropdown-menu-distance" class="dropdown-content">
+                <a href="#" class="dropdown-option active" data-distance="3000">3 km</a>
+                <a href="#" class="dropdown-option" data-distance="5000">5 km</a>
+                <a href="#" class="dropdown-option" data-distance="10000">10 km</a>
+            </div>
+        </div>
+
+
+        <div class="map-wrapper">
+            <gmpx-api-loader key="AIzaSyB3z1rLpgAtr37U0xzDxUrp9V8ev4S6UQM"
+                solution-channel="GMP_GE_mapsandplacesautocomplete_v2">
+            </gmpx-api-loader>
+
+            <gmp-map id="emergency-map" center="-19.922835610378083, -43.99259054280393" zoom="13" map-id="DEMO_MAP_ID">
+
+                <div slot="control-block-start-inline-start" class="place-picker-container">
+                    <gmpx-place-picker id="place-search" placeholder="Buscar Local"></gmpx-place-picker>
+                </div>
+
+                <gmp-advanced-marker id="my-location-marker" position="-19.922835610378083, -43.99259054280393">
+                    <div slot="content" class="my-location-icon"></div>
+                </gmp-advanced-marker>
+            </gmp-map>
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3z1rLpgAtr37U0xzDxUrp9V8ev4S6UQM&callback=initMap&libraries=places,geometry"
+                defer></script>
+            <script src="./index.js" type="module"></script>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h4>Telefones Úteis</h4>
+            <p>SAMU - 192</p>
+            <p>BOMBEIROS - 193</p>
+            <p>POLÍCIA MILITAR - 190</p>
+            <p>DEFESA CIVIL - 199</p>
+        </div>
+        <div class="footer-section">
+            <h4>Links Rápidos</h4>
+            <a href="#">Sobre</a>
+            <a href="#">Contatos</a>
+            <a href="#">Localização</a>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Termo de Uso</a>
+        </div>
+        <div class="footer-section info-uteis">
+            <h4>Informações Úteis</h4>
+            <p>P. Dom João Gaspar, 500 - Coração</p>
+            <p>Eucarístico, Belo Horizonte - MG</p>
+            <p class="link-info">Entre</p>
+            <p class="link-info">Tela principal</p>
+            <p class="link-info">Fazer pergunta</p>
+        </div>
+        <div class="copyright">
+            ©2025 - Projeto Acadêmico PUC Minas (TIAW)
+        </div>
+    </footer>
+</body>
+
+</html>
