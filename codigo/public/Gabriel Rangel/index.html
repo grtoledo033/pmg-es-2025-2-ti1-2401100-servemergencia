@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ficha Médica</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Ficha Médica</h1>
+
+    <form id="fichaForm">
+      <label for="nome">Nome Completo *</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="idade">Idade *</label>
+      <input type="number" id="idade" name="idade" required />
+
+      <label for="sexo">Sexo *</label>
+      <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+      <label for="tipoSanguineo">Tipo Sanguíneo *</label>
+      <select id="tipoSanguineo" name="tipoSanguineo" required>
+        <option value="">Selecione</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+
+      <label for="alergias">Alergias</label>
+      <textarea id="alergias" name="alergias" rows="2" placeholder="Ex: Amendoim, pólen..."></textarea>
+
+      <label for="doencas">Doenças Pré-Existentes</label>
+      <textarea id="doencas" name="doencas" rows="2" placeholder="Ex: Diabetes, hipertensão..."></textarea>
+
+      <label for="medicamentos">Medicamentos em uso</label>
+      <textarea id="medicamentos" name="medicamentos" rows="2" placeholder="Ex: Losartana, insulina..."></textarea>
+
+      <button type="submit">Salvar Ficha</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
