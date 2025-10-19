@@ -1,0 +1,12 @@
+{
+  "prestadores": [
+    {
+      "id": "1",
+      "nome_completo": "Joaquina Guimarães",
+      "idFuncional": "SAMU-192-8765",
+      "tipo_servico": "SAMU",
+      "especialidade": "Técnica Auxiliar de Regulação Médica (TARM)",
+      "email": "joaquina@samu.gov.br"
+    }
+  ]
+}

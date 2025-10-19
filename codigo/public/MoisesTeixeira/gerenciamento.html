@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Cadastro - Serviços 911</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-full">
+        <div class="sidebar-full">
+            <h1>Serviços Emergenciais 911</h1>
+            <p>Painel de gerenciamento de prestadores de serviço.</p>
+            <a href="cadastro.html" class="btn-link">Cadastrar Novo Prestador</a>
+        </div>
+
+        <div class="content-page">
+            <h2>Profissionais Cadastrados</h2>
+            <table class="tabela-prestadores">
+                <thead>
+                    <tr>
+                        <th>Nome Completo</th>
+                        <th>ID Funcional</th>
+                        <th>Tipo de Serviço</th>
+                        <th>Especialidade</th>
+                        <th>Email</th>
+                        <th>Ações</th> </tr>
+                </thead>
+                <tbody id="listaPrestadores">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        
+        const API_URL = 'http://localhost:3000/prestadores';
+
+        
+        async function carregarPrestadores() {
+            const tbody = document.getElementById('listaPrestadores');
+            tbody.innerHTML = '<tr><td colspan="6">Carregando dados...</td></tr>'; // Feedback
+
+            try {
+                const response = await fetch(API_URL);
+                if (!response.ok) throw new Error('Falha ao buscar dados do servidor.');
+                
+                const prestadores = await response.json();
+                tbody.innerHTML = ''; 
+
+                if (prestadores.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="6">Nenhum prestador cadastrado ainda.</td></tr>';
+                    return;
+                }
+
+                // Preenche a tabela
+                prestadores.forEach(prestador => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${prestador.nome_completo}</td>
+                        <td>${prestador.idFuncional}</td>
+                        <td>${prestador.tipo_servico}</td>
+                        <td>${prestador.especialidade}</td>
+                        <td>${prestador.email}</td>
+                        <td>
+                            <a href="editar.html?id=${prestador.id}" class="btn-acao btn-editar">Editar</a>
+                            
+                            <button data-id="${prestador.id}" class="btn-acao btn-excluir">Excluir</button>
+                        </td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            } catch (error) {
+                console.error('Erro ao carregar dados:', error);
+                tbody.innerHTML = `<tr><td colspan="6" style="color: red;">Erro ao carregar dados. Verifique se o JSON-Server está rodando.</td></tr>`;
+            }
+        }
+
+       
+        async function excluirPrestador(id) {
+            
+            if (!confirm('Tem certeza que deseja excluir este prestador? Esta ação é irreversível.')) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_URL}/${id}`, {
+                    method: 'DELETE',
+                });
+
+                if (!response.ok) throw new Error('Falha ao excluir o registro.');
+
+                alert('Prestador excluído com sucesso!');
+                carregarPrestadores(); 
+                
+            } catch (error) {
+                console.error('Erro ao excluir:', error);
+                alert('Erro ao excluir prestador. Tente novamente.');
+            }
+        }
+
+        
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            carregarPrestadores(); 
+
+            
+            document.getElementById('listaPrestadores').addEventListener('click', (event) => {
+                
+                if (event.target.classList.contains('btn-excluir')) {
+                    const id = event.target.dataset.id; 
+                    excluirPrestador(id);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

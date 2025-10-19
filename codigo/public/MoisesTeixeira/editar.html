@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Prestador - Serviços 911</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Editar Prestador de Serviço</h1>
+            <p>Atualize as informações do profissional de emergência.</p>
+            <a href="gerenciamento.html" class="btn-link-secondary">Voltar sem Salvar</a>
+        </div>
+        <div class="form-content">
+            <h2>Dados do Profissional</h2>
+            <form id="editarForm">
+                <input type="hidden" id="prestador_id">
+
+                <div class="input-group">
+                    <label for="nome_completo">Nome Completo</label>
+                    <input type="text" id="nome_completo" name="nome_completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="idFuncional">ID Funcional / Matrícula</label>
+                    <input type="text" id="idFuncional" name="idFuncional" required>
+                </div>
+                <div class="input-group">
+                    <label for="tipo_servico">Tipo de Serviço</label>
+                    <select id="tipo_servico" name="tipo_servico" required>
+                        <option value="" disabled>Selecione o tipo</option>
+                        <option value="SAMU">SAMU</option>
+                        <option value="Bombeiros">Corpo de Bombeiros</option>
+                        <option value="Policia">Polícia Militar</option>
+                        <option value="DefesaCivil">Defesa Civil</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="especialidade">Especialidade</label>
+                    <input type="text" id="especialidade" name="especialidade" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Deixe em branco para não alterar">
+                    <small>Preencha apenas se desejar alterar a senha.</small>
+                </div>
+                <button type="submit" class="btn-submit">Salvar Alterações</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:3000/prestadores';
+        let dadosOriginais = {}; // Para guardar a senha antiga
+
+        // 1. Função para buscar o ID da URL e carregar os dados
+        async function carregarDadosParaEdicao() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const id = urlParams.get('id');
+
+                if (!id) throw new Error('ID do prestador não fornecido.');
+
+                const response = await fetch(`${API_URL}/${id}`);
+                if (!response.ok) throw new Error('Falha ao buscar dados do prestador.');
+                
+                const prestador = await response.json();
+                dadosOriginais = prestador; 
+
+                // Preenche o formulário com os dados
+                document.getElementById('prestador_id').value = prestador.id;
+                document.getElementById('nome_completo').value = prestador.nome_completo;
+                document.getElementById('idFuncional').value = prestador.idFuncional;
+                document.getElementById('tipo_servico').value = prestador.tipo_servico;
+                document.getElementById('especialidade').value = prestador.especialidade;
+                document.getElementById('email').value = prestador.email;
+                
+
+            } catch (error) {
+                console.error('Erro ao carregar dados:', error);
+                alert(error.message);
+                window.location.href = 'gerenciamento.html'; 
+            }
+        }
+
+        // 2. Função para salvar as alterações 
+        document.getElementById('editarForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const id = document.getElementById('prestador_id').value;
+            const senha = document.getElementById('senha').value;
+
+            // Coleta os dados do formulário
+            const prestadorAtualizado = {
+                nome_completo: document.getElementById('nome_completo').value,
+                idFuncional: document.getElementById('idFuncional').value,
+                tipo_servico: document.getElementById('tipo_servico').value,
+                especialidade: document.getElementById('especialidade').value,
+                email: document.getElementById('email').value,
+                
+                senha: senha ? senha : dadosOriginais.senha 
+            };
+
+            try {
+                const response = await fetch(`${API_URL}/${id}`, {
+                    method: 'PUT', 
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(prestadorAtualizado),
+                });
+                if (!response.ok) throw new Error('Falha ao atualizar.');
+                
+                alert('Prestador atualizado com sucesso!');
+                window.location.href = 'gerenciamento.html'; 
+
+            } catch (error) {
+                console.error('Erro ao atualizar:', error);
+                alert('Não foi possível salvar as alterações.');
+            }
+        });
+
+        
+        document.addEventListener('DOMContentLoaded', carregarDadosParaEdicao);
+    </script>
+</body>
+</html>
