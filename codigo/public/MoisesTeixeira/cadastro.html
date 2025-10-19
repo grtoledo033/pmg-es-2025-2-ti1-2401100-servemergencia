@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Prestadores - Serviços 911</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Cadastro de Prestadores de Serviços Emergenciais</h1>
+            <p>Junte-se à nossa plataforma para um atendimento de emergência mais rápido e integrado.</p>
+            <a href="gerenciamento.html" class="btn-link-secondary">Ver Prestadores</a>
+        </div>
+        <div class="form-content">
+            <h2>Dados do Profissional</h2>
+            <form id="cadastroForm">
+                <div class="input-group">
+                    <label for="nome_completo">Nome Completo</label>
+                    <input type="text" id="nome_completo" name="nome_completo" placeholder="Nome Completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="idFuncional">ID Funcional / Matrícula</label>
+                    <input type="text" id="idFuncional" name="idFuncional" placeholder="ID Funcional / Matrícula" required>
+                </div>
+                <div class="input-group">
+                    <label for="tipo_servico">Tipo de Serviço</label>
+                    <select id="tipo_servico" name="tipo_servico" required>
+                        <option value="" disabled selected>Selecione o tipo</option>
+                        <option value="SAMU">SAMU</option>
+                        <option value="Bombeiros">Corpo de Bombeiros</option>
+                        <option value="Policia">Polícia Militar</option>
+                        <option value="DefesaCivil">Defesa Civil</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="especialidade">Especialidade</label>
+                    <input type="text" id="especialidade" name="especialidade" placeholder="Especialidade" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const prestador = {
+                nome_completo: document.getElementById('nome_completo').value,
+                idFuncional: document.getElementById('idFuncional').value,
+                tipo_servico: document.getElementById('tipo_servico').value,
+                especialidade: document.getElementById('especialidade').value,
+                email: document.getElementById('email').value,
+                senha: document.getElementById('senha').value 
+            };
+            
+            try {
+                const response = await fetch('http://localhost:3000/prestadores', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(prestador),
+                });
+                if (!response.ok) throw new Error('Falha ao cadastrar.');
+                alert('Prestador cadastrado com sucesso!');
+                window.location.href = 'gerenciamento.html'; // Redireciona para a lista
+            } catch (error) {
+                console.error('Erro ao cadastrar:', error);
+                alert('Não foi possível conectar ao servidor. Verifique se o JSON-Server está rodando.');
+            }
+        });
+    </script>
+</body>
+</html>
